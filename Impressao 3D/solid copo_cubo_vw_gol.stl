@@ -1,0 +1,11 @@
+solid copo_cubo_vw_gol
+  // Corpo externo
+  difference() {
+    // Cilindro externo
+    cylinder(h=30, r=19.5, $fn=120);
+
+    // Cavidade interna
+    translate([0,0,2.5])
+      cylinder(h=27.5, r=17.5, $fn=120);
+  }
+endsolid copo_cubo_vw_gol
